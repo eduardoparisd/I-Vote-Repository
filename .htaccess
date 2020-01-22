@@ -1,0 +1,14 @@
+{AddType text/html htm0 
+AddType application/x-shockwave-flash swf 
+AddType video/mpeg .mpeg .mpg .mpe 
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+
+AuthName "Member's Area Name"
+AuthUserFile /path/to/password/file/.htpasswd
+AuthType Basic
+require valid-user
+ErrorDocument 401 /error_pages/401.html
+AddHandler server-parsed .html 
+}
